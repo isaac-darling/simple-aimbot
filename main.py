@@ -23,11 +23,11 @@ def test(config_path: str) -> None:
     fovaaks.test(nnet)
 
 def main() -> None:
-    #winner = train("config-feedforward.conf")
-    #with open("./assets/genome.pkl", "wb") as f:
-    #    pickle.dump(winner, f)
+    winner = train("config-feedforward.conf")
+    with open("./assets/genome.pkl", "wb") as f:
+        pickle.dump(winner, f)
 
-    test("config-feedforward.conf")
+    #test("config-feedforward.conf")
 
 if __name__=="__main__":
     main()
